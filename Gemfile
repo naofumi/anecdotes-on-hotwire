@@ -61,3 +61,7 @@ gem "kamal", "~> 2.0"
 gem "sitepress-rails", "~> 4.0"
 
 gem "tailwindcss-rails", "~> 3.0"
+
+gem "markdown-rails", "~> 2.1"
+
+gem "rouge", "~> 4.4"

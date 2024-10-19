@@ -212,6 +212,7 @@
     </entry>
     <entry key="app/assets">
       <value>file://$MODULE_DIR$/app/assets</value>
+      <value>file://$MODULE_DIR$/app/content/assets</value>
     </entry>
     <entry key="app/channels">
       <value>file://$MODULE_DIR$/app/channels</value>
@@ -220,15 +221,19 @@
       <value>file://$MODULE_DIR$/app/controllers</value>
     </entry>
     <entry key="app/helpers">
+      <value>file://$MODULE_DIR$/app/content/helpers</value>
       <value>file://$MODULE_DIR$/app/helpers</value>
     </entry>
     <entry key="app/mailers">
       <value>file://$MODULE_DIR$/app/mailers</value>
     </entry>
     <entry key="app/models">
+      <value>file://$MODULE_DIR$/app/content/models</value>
       <value>file://$MODULE_DIR$/app/models</value>
     </entry>
     <entry key="app/views">
+      <value>file://$MODULE_DIR$/app/content</value>
+      <value>file://$MODULE_DIR$/app/content/pages</value>
       <value>file://$MODULE_DIR$/app/views</value>
     </entry>
     <entry key="config">

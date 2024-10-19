@@ -1,0 +1,6 @@
+!!!
+%html
+  %head
+    %title= current_page.data.title
+    = stylesheet_link_tag "application", "data-turbo-track": "reload"
+  %body= yield

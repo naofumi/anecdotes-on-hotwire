@@ -2,12 +2,75 @@
 @tailwind components;
 @tailwind utilities;
 
-/*
-
 @layer components {
-  .btn-primary {
-    @apply py-2 px-4 bg-blue-200;
-  }
-}
+    .md h2 {
+        @apply sticky bg-white top-12 scroll-mt-12 sm:top-12 sm:scroll-mt-12
+    }
 
-*/
+    .md h3 {
+        /*@apply sticky bg-white top-24 scroll-mt-24 sm:top-24 sm:scroll-mt-24*/
+        @apply scroll-mt-24 sm:scroll-mt-24
+    }
+
+    .md blockquote {
+        @apply pl-4 border-l-4 border-gray-200
+    }
+
+    .md a {
+        @apply text-orange-600 hover:text-orange-400 underline
+    }
+
+    *:not(pre) > code:not(.hljs) {
+        @apply px-1 rounded bg-gray-200 break-all
+    }
+
+    pre > code {
+        @apply border border-gray-400 rounded text-xs
+    }
+
+    /* general component classes */
+    .btn-primary {
+        @apply rounded-md bg-orange-600 px-3.5 py-2.5 text-sm font-semibold !text-white !no-underline shadow-sm hover:bg-orange-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600
+    }
+
+    .btn-primary-muted {
+        @apply rounded-md bg-orange-400 px-3.5 py-2.5 text-sm font-semibold !text-white !no-underline shadow-sm hover:bg-orange-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-400
+    }
+
+    .btn-outline-primary {
+        @apply rounded-md border border-orange-600 bg-white px-3.5 py-2.5 text-sm font-semibold !text-orange-600 !no-underline hover:bg-orange-500 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600
+    }
+
+    h1 {
+        @apply text-3xl text-gray-900 mb-4
+    }
+
+    h2 {
+        @apply text-base font-semibold leading-6 text-gray-900
+    }
+
+    ul li {
+        background: url('check-circle.svg') no-repeat left top 12px;
+        padding: 4px 16px 4px 32px;
+        list-style: none;
+        margin: 0;
+        vertical-align: middle;
+    }
+
+    ul li li {
+        background: url('check-circle-gray.svg') no-repeat left top 12px;
+    }
+
+    ol li {
+        background: url('check-circle.svg') no-repeat left top 12px;
+        padding: 4px 16px 4px 4px;
+        list-style: decimal outside none;
+        margin: 0;
+        vertical-align: middle;
+
+        li {
+            list-style: lower-alpha;
+        }
+    }
+
+}

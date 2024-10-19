@@ -57,3 +57,5 @@ group :test do
 end
 
 gem "kamal", "~> 2.0"
+
+gem "sitepress-rails", "~> 4.0"

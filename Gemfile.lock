@@ -144,6 +144,10 @@ GEM
       net-smtp
     marcel (1.0.4)
     matrix (0.4.2)
+    mime-types (3.6.0)
+      logger
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2024.1001)
     mini_mime (1.1.5)
     minitest (5.25.1)
     msgpack (1.7.2)
@@ -267,6 +271,13 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
+    sitepress-core (4.0.5)
+      mime-types (>= 2.99)
+    sitepress-rails (4.0.5)
+      actionpack (>= 6.0)
+      railties (>= 6.0)
+      sitepress-core (= 4.0.5)
+      sprockets-rails (>= 2.0.0)
     sprockets (4.2.1)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
@@ -344,6 +355,7 @@ DEPENDENCIES
   rails (~> 7.2.1)
   rubocop-rails-omakase
   selenium-webdriver
+  sitepress-rails (~> 4.0)
   sprockets-rails
   sqlite3 (>= 1.4)
   stimulus-rails

@@ -1,28 +1,24 @@
 ---
 title: Kamal Rails
-layout: static
+layout: body
+hide_top_button: true
 ---
 
 <div class="bg-white py-24 sm:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl lg:mx-0">
-      <p class="text-base font-semibold leading-7 text-orange-600">個人プロジェクトをどんどんデプロイしよう</p>
+      <p class="text-base font-semibold leading-7 text-orange-600">
+        インフラは安くて簡単だ！
+      </p>
       <h2 class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Kamal: 情報サイト</h2>
       <p class="mt-6 text-lg leading-8 text-gray-600">
         本サイトはKamalの情報を集めたサイトです
       </p>
       <div class="flex flex-wrap gap-2 mt-4">
-        <% site.glob("sections/*.html.*").sort_by(&:request_path).each do |page| %>
+        <% site.glob("sections/*.html.*")
+               .sort_by { _1.data.order }.each do |page| %>
           <%= link_to page.data.title, page.url, class: "btn-primary" %>
         <% end %>
-      </div>
-      <p class="mt-6 text-lg leading-8 text-gray-600">
-        また、本サイトはRuby on Rails + SQLite3で作成し、Kamalでデプロイしたものです。デプロイ方法については、下記の記事を参照してください。
-      </p>
-      <div class="flex flex-wrap gap-2 mt-4">
-        <%= link_to "Kamal 2で さくらのVPS にRailsアプリをデプロイ",
-                    "https://zenn.dev/naofumik/articles/ce92c135a3cb2b",
-                    class: "btn-primary", target: "_blank" %>
       </div>
     </div>
   </div>

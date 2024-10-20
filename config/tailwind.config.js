@@ -9,6 +9,7 @@ module.exports = {
     './app/content/helpers/**/*.rb',
     './app/content/layouts/**/*.{md,erb,haml,html,slim}',
     './app/content/pages/**/*.{md,erb,haml,html,slim}',
+    './app/content/application/**/*.{md,erb,haml,html,slim}',
   ],
   theme: {
     extend: {
